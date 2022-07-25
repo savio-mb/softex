@@ -6,13 +6,13 @@ def calculadora():
         num2 = int(input('Digite o segundo número: '))
         
         if tipo == 1:
-          print(num1+num2)
+          print("O resultado da soma é: ",num1+num2)
         elif tipo == 2:
-          print(num1 - num2)
+          print("O resultado da subtração é: ",num1 - num2)
         elif tipo == 3:
-          print(num1 * num2)
+          print("O resultado da multiplicação é: ",num1 * num2)
         elif tipo == 4:
-           print(num1 / num2)
+           print("O resultado da divisão é: ",num1 / num2)
         elif tipo == 0:
             verificador = False
             break 
