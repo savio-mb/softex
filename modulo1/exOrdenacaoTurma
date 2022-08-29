@@ -1,0 +1,145 @@
+Algoritmo "semnome"
+
+Var
+
+alunos, turma, turmasAprovadas:vetor[1..25] de caractere
+melhorAlunoA,melhorAlunoB,melhorAlunoC,melhorAlunoD: caractere
+maiorNotaA,maiorNotaB,maiorNotaC,maiorNotaD: real
+notas:vetor[1..25] de real
+indice,proxNota,contAprovados,contAprovadosA,contAprovadosB,contAprovadosC,contAprovadosD,teste,classA,classB,classC,classD:inteiro
+bckNome,bckTurma:caractere
+bckNota: real
+
+Inicio
+
+para indice de 1 ate 25 passo 1 faca
+escreva("Digite o nome do",indice," aluno:")
+leia(alunos[indice])
+escreva("Digite a nota do",indice," aluno:")
+leia(notas[indice])
+escreva("Digite a turma do",indice," aluno:")
+leia(turma[indice])
+fimpara
+
+
+
+para indice de 1 ate 24 passo 1 faca
+para proxNota de indice + 1 ate 25 passo 1 faca
+se(notas[indice] < notas[proxNota]) entao
+
+bckNome <- alunos[indice]
+bckNota <- notas[indice]
+bckTurma <- turma[indice]
+alunos[indice] <- alunos[proxNota]
+notas[indice] <- notas[proxNota]
+turma[indice] <- turma[proxNota]
+alunos[proxNota] <- bckNome
+notas[proxNota] <- bckNota
+turma[proxNota] <- bckTurma
+
+
+fimse
+fimpara
+fimpara
+
+//verificar os aprovados
+para indice de 1 ate 25 faca
+se(notas[indice] >= 7) entao
+contAprovados <- contAprovados + 1 // colocar o se turma e incrementar
+se(turma[indice]="a") entao
+contAprovadosA <- contAprovadosA  + 1
+senao
+se(turma[indice]="b") entao
+contAprovadosB <- contAprovadosB  + 1
+senao
+se(turma[indice]="c") entao
+contAprovadosC <- contAprovadosC  + 1
+senao
+contAprovadosD <- contAprovadosD + 1
+
+//turmasAprovadas[indice] <- turma[indice]
+fimse
+fimse
+fimse
+fimse
+fimpara
+
+// separando a melhor nota por turma
+para indice de 1 ate 25 faca
+se(turma[indice]="a") entao
+se(maiorNotaA < notas[indice]) entao
+maiorNotaA <- notas[indice]
+melhorAlunoA <- alunos[indice]
+fimse
+senao
+
+se(turma[indice]="b") entao
+se(maiorNotaB < notas[indice]) entao
+maiorNotaB <- notas[indice]
+melhorAlunoB <- alunos[indice]
+fimse
+senao
+
+se(turma[indice]="c") entao
+se(maiorNotaC < notas[indice]) entao
+maiorNotaC <- notas[indice]
+melhorAlunoC <- alunos[indice]
+fimse
+senao
+
+se(maiorNotaD < notas[indice]) entao
+maiorNotaD <- notas[indice]
+melhorAlunoD <- alunos[indice]
+fimse
+
+
+
+
+
+fimse
+fimse
+fimse
+fimpara
+
+
+// mostrar a maior nota de todas as turmas
+escreval(" a maior nota de todas foi ",alunos[1]," da turma ",turma[1]," e sua nota foi: ",notas[1])
+
+
+//mostrar a quantidade de alunos aprovados
+escreval("A quantidade de alunos aprovados são: ",contAprovados)
+
+
+//mostrar a quantidade de alunos aprovados por turma
+escreval("A quantidade de alunos da turma A aprovados são ",contAprovadosA)
+escreval("A quantidade de alunos da turma B aprovados são ",contAprovadosB)
+escreval("A quantidade de alunos da turma C aprovados são ",contAprovadosC)
+escreval("A quantidade de alunos da turma D aprovados são ",contAprovadosD)
+
+//mostrar os melhores aluno de cada turma
+//para classA <- 1 ate 3 faca
+se(melhorAlunoA[classA] <> "") entao
+escreval("A classificacao da turma A é: ",melhorAlunoA, " e sua nota foi", maiorNotaA)
+fimse
+//fimpara
+
+//para classB <- 1 ate 3 faca
+se(melhorAlunoB[classB] <> "") entao
+escreval("A classificacao da turma B é: ",melhorAlunoB, " e sua nota foi", maiorNotaB)
+fimse
+//fimpara
+
+//para classC <- 1 ate 3 faca
+se(melhorAlunoC[classC] <> "") entao
+escreval("A classificacao da turma C é: ",melhorAlunoC, " e sua nota foi", maiorNotaC)
+fimse
+//fimpara
+
+//para classD <- 1 ate 3 faca
+se(melhorAlunoD[classD] <> "") entao
+escreval("A classificacao da turma D é: ",melhorAlunoD, " e sua nota foi", maiorNotaD)
+fimse
+//fimpara
+
+
+Fimalgoritmo
