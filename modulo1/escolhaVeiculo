@@ -1,0 +1,167 @@
+Algoritmo "escolhaveiculo"
+
+Var
+
+aereo,pular,vDentro,devagar,piloto,aviao,helicoptero: caractere
+veiculoT,cabePessoa,pesado,pedal,capacete,passageiro,trilho,pista,vLeve,eALto,carroceria,onibus:caractere
+aquatico,submarino,nAgua,vela,motor,navio,lancha: caractere
+Inicio
+
+escreva("É terrestre?")
+leia(veiculoT)
+se(veiculoT="sim") entao
+escreva("Cabe apenas uma pessoa?")
+leia(cabePessoa)
+se(veiculoT="sim") e (cabePessoa="sim") entao
+escreva("É pesado?")
+leia(pesado)
+se(veiculoT="sim") e (cabePessoa="sim") e (pesado="sim") entao
+escreval("O veiculo escolhido foi um trator")
+senao
+escreva("Tem pedal?")
+leia(pedal)
+se(veiculoT="sim") e (cabePessoa="sim") e (pedal="sim") entao
+escreval("O veiculo escolhido foi uma bicicleta")
+fimse
+fimse
+fimse
+fimse
+
+
+se(veiculoT="sim") e (cabePessoa="nao") entao
+escreva("Usa capacete?")
+leia(capacete)
+se(veiculoT="sim") e (cabePessoa="nao") e (capacete="sim")entao
+escreval("O veiculo escolhido foi uma moto")
+fimse
+fimse
+
+
+se(veiculoT="sim") e (cabePessoa="nao") e (capacete="nao") entao
+escreva("Tem passageiro?")
+leia(passageiro)
+se(veiculoT="sim") e (cabePessoa="nao") e (capacete="nao") e (passageiro="sim") entao
+escreva("usa trilho?")
+leia(trilho)
+se(veiculoT="sim") e (cabePessoa="nao") e (capacete="nao") e (passageiro="sim") e (trilho="sim") entao
+escreval("O veiculo escolhido foi um trem")
+senao
+
+
+escreva("Anda na pista?")
+leia(pista)
+se(pista="sim") entao
+escreva("É veiculo leve?")
+leia(vLeve)
+se(pista="sim") e (vLeve="sim") entao
+escreval("O veiculo escolhido foi um carro")
+senao
+
+escreva("É alto?")
+leia(eAlto)
+se(eAlto="sim") entao
+escreva("Usa carroceria?")
+leia(carroceria)
+se(eAlto="sim") e (carroceria="sim") entao
+escreval("O veiculo escolhido foi um caminhão")
+
+senao
+escreva("Pode ter cobrador?")
+leia(onibus)
+se(onibus="sim") entao
+escreval("O veiculo escolhido foi um ônibus")
+
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+
+se(veiculoT="nao") entao
+escreva("É aéreo?")
+leia(aereo)
+se(aereo="sim") entao
+escreva("Precisa pular?")
+leia(pular)
+se(pular="sim") entao
+escreval("O transporte escolhido foi uma asa delta")
+
+
+senao
+
+escreva("Viaja dentro?")
+leia(vDentro)
+se(vDentro="sim") entao
+escreva("É devagar?")
+leia(devagar)
+se(devagar="sim") entao
+escreval("O transporte escolhido foi um balão")
+senao
+
+escreva("Tem piloto?")
+leia(piloto)
+se(piloto="sim") entao
+escreva("Possui asas fixas?")
+leia(aviao)
+se(aviao="sim") entao
+escreval("O transporte escolhido foi um avião")
+senao
+
+escreva("Faz voo vertical?")
+leia(helicoptero)
+se(helicoptero="sim")entao
+escreval("O transporte escolhido foi um helicoptero")
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+
+se(veiculoT="nao") e (aereo="nao") entao
+escreva("É aquatico?")
+leia(aquatico)
+se(aquatico="sim") entao
+escreva("É coberto d'água?")
+leia(submarino)
+se(submarino="sim") entao
+escreval("O transporte escolhido foi um submarino")
+senao
+
+escreva("Navega na água?")
+leia(nAgua)
+se(nAgua="sim") entao
+escreva("Possui vela?")
+leia(vela)
+se(vela="sim") entao
+escreval("O transporte escolhido foi um barco")
+senao
+
+escreva("Tem motor?")
+leia(motor)
+se(motor="sim") entao
+escreva("É alto?")
+leia(navio)
+se(navio="sim")entao
+escreval("O transporte escolhido foi um navio")
+senao
+escreva("Pode ser descoberto?")
+leia(lancha)
+se(lancha="sim")entao
+escreval("O transporte escolhido foi uma lancha")
+
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo
+
