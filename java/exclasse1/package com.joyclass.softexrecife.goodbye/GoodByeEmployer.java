@@ -6,6 +6,6 @@ public class GoodByeEmployer {
   {
       
       System.out.println(
-          "
-          It was a pleasure to welcome you to SoftEx employee Sávio. Goodbye");
+          "It was a pleasure to welcome you to SoftEx employee Sávio. Goodbye");
   }
+}
