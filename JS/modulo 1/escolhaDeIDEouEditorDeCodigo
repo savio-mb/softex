@@ -1,0 +1,17 @@
+A minha escolha, como a da maioria dos programadores, foi o VScode.
+Ele facilita na hora de programar devido as suas várias extensões que 
+auxiliam o desenvolvedor. As extensões que eu escolhi foram:
+1-HTML CSS suport: uma mão na roda na hora de iniciar o código HTML. Com
+a utilização do ! ele já entrega a estrutura bem definida com as tags HTML
+que precisa para iniciar o projeto.
+2-Kite AutoComplete: Esse é uma extensão excelente para programadores. 
+Porém para quem esta iniciando, pode atrapalhar o aprendizado futuro. 
+Uma das funçoes mais práticas que vem nele é basicamente autocompletar 
+o código quando estiver escrevendo. Isso ajuda na velocidade de programação 
+porém atrapalha na hora de aprender a sintaxe em si quando estiver programando.
+3-Live Server: Essa extensão ajuda a ficar em modo live o seu código HTML. 
+Assim, quando for fazer alterações não é preciso ficar recarregando a página.
+4-Node.js Exec: Essa extensão ajuda a rodar o código JS/Node no terminal de 
+forma mais fácil.
+5-Prettier: A função dessa extensão se resume basicamente em identar o código de
+forma mais fácil. Nele a pessoa configura como que vai ficar o padrão de identação.
