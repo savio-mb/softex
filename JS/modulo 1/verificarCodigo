@@ -1,0 +1,5 @@
+O primeiro site escolhido foi o da handmade:https://www.handmade.design/contato
+Nele o elemento que eu verifiquei foi o formulário na página de contato. A parte de construir o formulário foi a parte do HTML e a estilização com o CSS. Porém para coletar esses dados, o botão Enviar utiliza o javascript para ler o conteúdo que foi colocado atraves de uma callback passada no addEventListener que esta atrelado a ele. Assim o formulário e assim guarda essa informação para futuros usos de marketing.
+
+O segundo site analisado foi o invertexto: https://www.invertexto.com/contador-caracteres
+A função dessa ferramenta é quando o usuário for digitando no campo feito em HTML ele ir mostrando a quantidade de caracteres, palavras e linhas. Essa contagem é feita atravez do JS com as funções de manipulação de string. Tanto a parte de contar a os caracteres como a forma que ele conta as palavras(verificando se tem caracteres mais a utilização do espaço) é feito com o JS.
