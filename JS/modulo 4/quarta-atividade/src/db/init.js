@@ -17,7 +17,7 @@ const initDb = {
       )`)
       console.log(`DB criado com sucesso`)
     } catch (erro) {
-      console.error(`DB não iniciado ${erro}`)
+      console.error(`Não foi possível criar o DB ${erro}`)
     }
     await db.close()
   }
