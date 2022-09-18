@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: #ccc;
+  padding: 0.8rem;
+}
+
+img {
+  width: 10%;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-container a {
+  margin: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  background-color: blue;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
