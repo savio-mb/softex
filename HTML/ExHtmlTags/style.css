@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+:root{    
+    font-size: 62.5%; /* 1rem = 10px */  
+    --background-body: rgb(32,2,52);
+    --background-body-gradient: linear-gradient(190deg, rgba(32,2,52,1) 0%, rgba(0,0,0,1) 100%);
+    --text-color: #edd6fc;
+    --button-background:  blueviolet;
+    --secondary-color:  rgb(116, 0, 224);
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-body);
+    background: var(--background-body-gradient);
+    
+    color: var(--text-color);
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4.5rem;     
+    margin-bottom: 2rem;     
+}
+
+.logo{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-bottom: 6rem; 
+}
+
+.container p{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;    
+}
+
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.form-cadastro p {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+.form-cadastro input{
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.form-cadastro button{
+    padding: .8rem;
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    border-radius: .5rem;
+}
+
+.form-cadastro button:hover{
+    background-color: var(--secondary-color)
+}
+
+
+.curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.curso h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.5rem;     
+    margin-bottom: 2rem; 
+    
+}
+
+.node{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.node img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.node h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;     
+    margin-bottom: 1rem; 
+}
+
+
+.react{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.react img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.react h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;     
+    margin-bottom: 1rem; 
+}
+
+.newsletter{
+    width: 100%;
+    text-align: center;
+}
+
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;     
+    padding-bottom: 1.5rem;
+}
+
+.call-to-action input{
+    padding: .5rem;
+}
+
+.call-to-action button{
+    padding: .8rem;
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+.call-to-action button:hover{
+    background-color: var(--secondary-color)
+}
+
+
+footer p{
+    font-size: 1.2rem ;
+    text-align: center;
+
+    padding: 1rem;
+}
