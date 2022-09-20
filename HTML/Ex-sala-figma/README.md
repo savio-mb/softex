@@ -1,0 +1,1 @@
+<img src="https://github.com/savio-mb/softex/blob/main/HTML/Ex-sala-figma/img/pagina.png">
