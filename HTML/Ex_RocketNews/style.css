@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --background-color: #121214;
+  --primary-color: #08c05e;
+  --secondary-color: #8257e5;
+  --title-color: #ffffff;
+  --icon-button-color: #ffffff;
+  --label-color: #a8a8a8;
+  --placeholder-color: #6a6a6a;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+}
+
+.left-side {
+  height: 100vh;
+  width: 50vw;
+  background-color: var(--background-color);
+}
+
+.container .logo {
+  max-width: 30rem;
+  margin: 5rem 0 9.2rem 3rem;
+}
+
+.content {
+  margin-left: 3.6rem;
+}
+
+.container .left-side h1 {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.815rem;
+  margin-bottom: 0.856rem;
+}
+
+.container .left-side h2 {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.568rem;
+  margin-bottom: 0.9rem;
+}
+
+.container .left-side p {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.942rem;
+  margin-bottom: 5rem;
+}
+
+.form-email .input-text {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--label-color);
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.942rem;
+}
+
+.form-button {
+  display: flex;
+  height: 4.8rem;
+
+  width: 55vw;
+
+  margin-top: 1rem;
+}
+
+.input-email {
+  height: 100%;
+  width: 55vw;
+  z-index: 10;
+
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 0.5rem solid var(--primary-color);
+  outline: none;
+}
+
+.form-email button {
+  width: 4.8rem;
+  height: 100%;
+  border: none;
+  background-color: var(--secondary-color);
+  background-image: url('./assets/send.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  z-index: 10;
+}
+
+.continue-reading {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  margin-top: 5.2rem;
+}
+
+.continue-reading a {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  line-height: 1.942rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  color: var(--secondary-color);
+}
+
+.right-side {
+  height: 100vh;
+  width: 50vw;
+}
+
+.right-side img {
+  height: 100vh;
+  width: 50vw;
+  object-fit: cover;
+  object-position: 100% 0;
+}
