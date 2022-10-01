@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;     
+    --background-body: rgb(214,93,177);
+    --background-body-gradient: radial-gradient(circle, rgba(214,93,177,1) 0%, rgba(214,93,177,1) 35%, rgba(185,61,175,1) 100%);
+    --margin-link: 1.6rem;
+    --text-color:#DBE7ED;   
+    --background-hover: #ad7edd;
+}
+
+body{
+    /* background: rgb(93,31,196);
+    background: radial-gradient(circle, rgba(93,31,196,1) 0%, rgba(113,61,198,1) 35%, rgba(132,94,194,1) 100%); */
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-body);
+    background: var(--background-body-gradient);
+    
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil{
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid #BB99DD; 
+    border-radius: 50%;
+    padding: .4rem; 
+}
+
+.container p{
+   
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3.3rem;    
+    color: var(--text-color);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: calc(7rem - var(--margin-link) );
+}
+
+.links a{
+    
+    text-decoration: none;
+    margin-bottom: 1.6rem;
+    border: 2px solid #BB99DD;
+    border-radius: .4rem;
+    padding: 1rem 1rem;
+
+    box-shadow: inset 0 0 0 0  var(--background-hover);
+
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--text-color);
+
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.links a:hover{
+    box-shadow: inset 30rem 0 0 0 var(--background-hover);
+}
+
+.social-links{
+    display: flex;
+    gap: 3.4rem;   
+}
+
