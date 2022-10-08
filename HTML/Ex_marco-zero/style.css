@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --background-color: #000;
+  --text-color: #fff;
+
+  --color-active: #c0392b;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--background-color);
+}
+
+.container {
+  max-height: 120rem;
+  margin: auto 0;
+}
+
+.nav {
+  position: fixed;
+  background-color: var(--background-color);
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: var(--text-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  background-color: var(--text-color);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: var(--background-color);
+}
+
+.nav.active .container {
+  padding: 1rem 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: var(--color-active);
+  font-weight: bold;
+}
+
+.nav .container .logo {
+  font-size: 3rem;
+}
+
+.home {
+  background-image: url('./assets/marco-zero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: -2;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.home h1 {
+  padding-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.praca {
+  padding-bottom: 10rem;
+}
+
+.praca h1 {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pontos-turisticos header {
+  padding-bottom: 4rem;
+}
+
+.pontos-turisticos h2 {
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.mais-informaces {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+header p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+img {
+  width: 60rem;
+  height: 40rem;
+  margin-right: 2rem;
+  border-radius: 1.6rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: min(120rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.inverse-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-top: 2rem;
+
+  gap: 2rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1rem;
+}
