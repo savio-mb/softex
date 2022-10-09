@@ -96,13 +96,13 @@ body {
 }
 
 .bg-venha-visitar {
-  background-image: url(./assets/marco-zero-venha-visitar.jpg);
+  background-image: url(../assets/Museu-Cais-do-Sertao-venha-visitar.jpg);
 }
 .bg-conhecendo {
-  background-image: url(./assets/marco-zero-conhecendo.jpg);
+  background-image: url(../assets/Museu-Cais-do-Sertao-historia.jpg);
 }
 .bg-historia {
-  background-image: url(./assets/marco-zero-historia.jpg);
+  background-image: url(../assets/Museu-Cais-do-Sertao-conhecendo.jpg);
 }
 
 .slide-container {
