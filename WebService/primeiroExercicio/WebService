@@ -1,0 +1,48 @@
+POST /consultaInfoCliente HTTP/1.1
+Host: www.softexrecife.joyclass.com
+Content-Type: application/soap+xml; charset=UTF-8
+content-length: nnn
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://softexrecife.joyclass.com/soap/envelope">
+  <soap:Header>
+  </soap:Header>
+  <soap:Body xmlns:m="http://softexrecife.joyclass.com/users">
+    <m:GetUserInfo>
+      <m:UserName>Tony Stark</m:UserName>
+    </m:GetUserInfo>
+  </soap:Body>
+</soap:Envelope>
+
+
+
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=UTF-8
+content-length: nnn
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://softexrecife.joyclass.com/soap/envelope">
+<soap:Body xmlns:m="http://softexrecife.joyclass.com/users">
+  <m:GetUserResponse>    
+    <m:UserAge>53</m:UserAge>
+    <m:UserAddress>P. Sherman 42 Wallabway, Sidney</m:UserAddress>
+    <m:UserPhone>212-970-4133</m:UserPhone>
+    <m:UserOccupation>Gênio, bilionário, playboy, filantropo</m:UserOccupation>
+  </m:GetUserResponse>
+</soap:Body>
+</soap:Envelope>
+
+<!-- Explicação -->
+
+Header: Essa parte não é obrigatoria e é nela onde vai informações especificas
+da aplicação. Como exemplo podemos citar a autenticação necessária para utizar ela.
+
+Body: Essa parte é obrigatoria de se preencher e é nela onde contem os elementos
+que a mensagem SOAP vai enviar.
+
+No exemplo acima foi foi feito uma requisição das informações de um usuário com
+o nome Tony Stark.
+A reposta apresentada no exemplo foi "200 OK". Ou seja, a requisição foi bem sucedida.
+Caso acontecesse algum erro durante a respota, pode-se utilizar o SOAP Fault para enviar
+uma mensagem de erro para a pessoa que está requisitando a informação.
