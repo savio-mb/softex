@@ -1,0 +1,46 @@
+Os métodos HTTP serve para indicar a ação que o desenvolvedor tem que escrever
+em seu código para que consiga fazer uma requisição.
+
+Get: Como diz o próprio nome, esse método serve para fazer uma solicitação de
+algum recurso especifico. Nesse método o resultado só pode ser em forma de dados.
+
+Ex:
+app.get('/', function(req,res){
+res.send("Home")
+})
+
+No exemplo acima está sendo feita uma requisiçào a url "/" que normalmente é onde fica a home. Depois ele responde enviado um "Home" quando o status deu ok.
+
+HEAD: Esse método é semelhante ao método GET, porém sem conter o corpo da resposta. No caso ele só retorna o cabeçalho que foi feito a solicitação pelo
+método GET.
+
+POST: Esse método normalmente envia dados ao servidor através de um formulário
+HTML, resultando assim em uma alteração nele com o as informações passadas pelo formulário.
+
+PUT: Esse método é utilizado para criar ou alterar algum recurso no servidor.
+EX:
+app.put('api/put/user/:id', (req,res)=>{
+const found = users.find(user => user.id === 10)
+if(found !== undefined){
+found.id = 4
+}
+})
+
+DELETE: Como diz o próprio nome, esse método dela algo do servidor.
+
+app.delete('api/put/user/:id', (req,res)=>{
+const found = users.find(user => user.id === 10)
+if(found !== undefined){
+found.id = 4
+}
+res.send({
+Sucess: 'ID deletado'
+})
+})
+
+---
+
+WSLD: Ele é uma descrição em formato XML para descrever um serviço web. Nele é
+descrito como o programador deve compor uma solicitação e também contem uma
+descrição do serviço solicitado. Ou seja, descreve para as pessoas que estão
+lendo a documentação de como cada end-point deve ser utilizado.
