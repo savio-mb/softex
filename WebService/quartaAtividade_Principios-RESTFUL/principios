@@ -1,0 +1,26 @@
+Essas regras servem como base para criar uma API RESTfull. Caso seu projeto
+só siga algumas delas ele não é deixa de ser uma API RESTfull.
+
+1 regra - Tem que existir os dois papeis o cliente e o servidor:
+A API tem que ter os dois lados, backend e o frontend. Alguem fazendo o papel
+do servidor(não o servidor maquina em si). Ou seja, tem que ter o código fazendo 
+o papel do backend. E tem que ter o lado do cliente(navegador). É essencial que 
+faça a separação das duas partes.
+
+2 regra - Stateless: O sistema não pode ter sessões amarradas/criadas para o 
+cliente e as requisições tem que ter todos os dados para o processo ser realizado
+e a resposta correta.
+
+3 regra - Cache: Precisa Permitir que o cache seja feito caso seja necessário.
+Normalmente ela é pouca utilizada na API
+
+4 regra - Interface uniforme: A API não pode fazer distinções de clientes. Ou seja,
+não pode diferenciar e processar algo diferente para o navegador, pc ou celuar.
+
+5 regra - Sistema em camadas: entre o cliente e a API deve ser possível adicionar
+algum seviço como o log da aplicação. Ou seja, tem que ser possível que entre o 
+servidor e o front a pessoa conseguir acessar a API e colocar algum serviço caso
+seja necessário.
+
+6 regra - Código sobre demanda: Tem que fornecer os recursos para utilizar a
+API dentro do próprio servidor dela(sem depender de terceiro).
