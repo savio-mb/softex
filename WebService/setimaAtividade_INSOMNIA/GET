@@ -1,0 +1,8 @@
+A primeira requisição GET foi para a API do JSON Placeholder.
+O resultado foi a imagem 1.
+
+A segunda requisição foi para a API RestCountries.
+O resultado foi a imagem 2.
+
+A terceira requisição foi para a API Cat Facts.
+O resultado foi a imagem 3.
