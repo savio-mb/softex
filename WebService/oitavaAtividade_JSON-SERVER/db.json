@@ -1,0 +1,80 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "X-Búrguer",
+      "descricao": "Pão, bife de hambúrguer 90g, 1 fatia de queijo, salada e batata.",
+      "preco": 10.5
+     
+    },
+    {
+      "id": 2,
+      "nome": "X-Bacon",
+      "descricao": "Pão, bife de hambúrguer 90g, 1 fatia de queijo, 2 fatia de bacon, salada e batata.",
+      "preco": 12.5
+     
+    },
+    {
+      "id": 3,
+      "nome": "X-Tudo",
+      "descricao": "Pão, 2 bifes de hambúrguer 90g, 2 fatias de queijo, 4 fatias de bacon, salada e batata.",
+      "preco": 14.5
+      
+    },
+    {
+      "id": 4,
+      "nome": "Coca cola 350ml",
+      "descricao": "",
+      "preco": 5.5
+      
+    },
+    {
+      "id": 5,
+      "nome": "Coca cola 600ml",
+      "descricao": "",
+      "preco": 7.5
+      
+    }, 
+    {
+      "id": 6,
+      "nome": "Hambúrguer de batata doce",
+      "descricao": "Pão, bife de hambúrguer 90g de frango, salada e batata doce.",
+      "preco": 9.5     
+      
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "nota": 5,
+      "comentario": "Melhor hambúrguer de todos",
+      "produtoId": 1
+    },
+    {
+      "id": 2,
+      "nota": 5,
+      "comentario": "Tem bacon então precisa dizer algo mais?",
+      "produtoId": 2
+    }, {
+      "id": 3,
+      "nota": 5,
+      "comentario": "Aquele hambúrguer que a pessoa come e fica com a barriga estourando",
+      "produtoId": 3
+    }, {
+      "id": 4,
+      "nota": 1,
+      "comentario": "Tem gosto de rato",
+      "produtoId": 4
+    }, {
+      "id": 5,
+      "nota": 1,
+      "comentario": "Só sinto gosto de gás",
+      "produtoId": 5
+    }, {
+      "id": 6,
+      "nota": 5,
+      "comentario": "Aquele hambúrguer feito para os monstos. BIRLLLLLLLL",
+      "produtoId": 6
+    }
+  ]
+}
